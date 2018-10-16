@@ -1,0 +1,139 @@
+.public-head-layout {
+	height: 120px;
+	position: relative;
+}
+.logo {
+	width: 200px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	bottom: 0;left: 50px;
+}
+.login-layout {
+	height: 450px;
+	position: relative;
+}
+.banner-box{
+	height: 340px;
+	width: 340px;
+	background: white;
+	position: absolute;
+	right: 40px;
+	top: 30px;
+	border-radius: 8px;
+}
+.banner-box h2{
+	font-size: 18px;
+	margin-top: 0;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.banner-box .right{
+	float: right;
+	font-size: 16px;
+}
+.banner_content{
+	height: 228px;
+	width: 300px;
+	margin-left: 20px;
+}
+.tab_form{
+	width: 300px;
+	height: 34px;
+	margin: 20px 0;
+}
+.icon{
+	width: 39px;
+	height: 34px;
+	display: block;
+	float: left;
+	background: gainsboro;
+}
+.icons{
+	width: 39px;
+	height: 34px;
+	display: block;
+	float: right;
+	background: gainsboro;
+}
+.icon img{
+	width: 14px;
+	height: 16px;
+	margin-left: 14px;
+	margin-top: 10px;
+	display: block;
+}
+.icons img{
+	width: 14px;
+	height: 16px;
+	margin-left: 14px;
+	margin-top: 10px;
+	display: block;
+}
+.tab_form p{
+	color: white;
+	width: 300px;
+	height: 20px;
+	display: none;
+	line-height: 20px;
+	text-align: center;
+	background: brown;
+	margin: 0 0 ;
+}
+.phone1_form{
+	height: 34px;
+	width: 261px;
+	float: right;
+}
+.phone2_form{
+	width: 222px;
+	height: 34px;
+}
+.checkbox{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+label{
+	min-height: 20px;
+	cursor: pointer;
+	margin-left: 6px;
+}
+#reglogin_box{
+	margin-left: 10px;
+}
+.sign_up{
+	color: white;
+	font-size: 18px;
+}
+#sign_up{
+	width: 300px;
+	height: 46px;
+	border-radius: 8px;
+	background: brown;
+}
+h3{
+	width: 300px;
+	height: 20px;
+	font-size: 16px;
+	margin: 20px 30px;
+}
+.links {
+	margin-top: 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.links li {
+	color: #333;
+	min-width: 80px;
+	text-align: center;
+	margin: 10px 20px 0;
+	list-style: none;
+}
+.copyright {
+	color: #666;
+	text-align: center;
+	line-height: 2em;
+}

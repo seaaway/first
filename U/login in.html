@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/login.css">
+	<title>U袋网 - 登录 / 注册</title>
+	<script type="text/javascript">
+	window.onload = function() {
+				function $(id) {
+					return document.getElementById(id)
+				}
+				let oTel=$('tele_phone');
+				let Go=$('sign_up');
+				let oPwsd=$('register_phone');
+				var arr = document.cookie.split(";")
+				Go.onclick = function() {
+					for(let i = 0, len = arr.length; i < len; i++) {
+						var list = arr[i].split("=")						
+						if(list[0].indexOf("phonenum_" != -1)) {
+							var json=JSON.parse(list[1])							
+						}
+					}
+					if(oTel.value == json.id && oPwsd.value == json.pwsd ) {
+						alert("登陆成功")
+					} else if(oTel.value == '' && oPwsd.value == ''){
+						alert("请输入手机号和密码")
+					}else{
+						alert("手机号或密码错误")
+					}
+				}
+			}
+</script>
+</head>
+<body>
+	<div class="public-head-layout container">
+		<a class="logo" href="index.html"><img src="images/icons/logo.jpg" alt="U袋网" class="cover"></a>
+	</div>
+	<div style="background:url(images/login_bg.jpg) no-repeat center center; ">
+		<div class="login-layout container">
+			<div class="banner-box">
+				<h2>欢迎登录U袋网平台
+				</h2>
+				<div class="banner_content" id="content">
+					<form action="index.html" method="post"class="tab_form" id="reglogin_form">
+						<div class="tab_form">
+							<p>请输入手机号和密码</p>
+								<span class="icon"><img src="images/icons/手机.png"/></span>
+									<input class="phone1_form" placeholder="手机号" name="phone" id="tele_phone" value="" />							
+						</div>
+						<p>手机号不正确</p>
+						<div class="tab_form">
+								<span class="icon"><img src="images/icons/锁.png"/></span>
+									<input class="phone2_form" placeholder="请输入密码" name="phone" id="register_phone" value="" />
+								<span class="icons"><img src="images/icons/眼睛.png"/></span>
+								<p>4到16位（字母，数字，下划线，减号）</p>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="" id="reglogin_box" value=""/>	<label for="reglogin_box">同意用户协议</label>
+						</div>
+						<div class="sign_up">
+							<input type="button" name="sign_up" id="sign_up" value="登录" />
+						</div>
+						<h3>
+							没有账号？
+							<a href="login up.html" id="register">免费注册</a>
+						</h3>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-login container clearfix">
+		<ul class="links">
+			<a href=""><li>网店代销</li></a>
+			<a href=""><li>U袋学堂</li></a>
+			<a href=""><li>联系我们</li></a>
+			<a href=""><li>企业简介</li></a>
+			<a href=""><li>新手上路</li></a>
+		</ul>
+		<!-- 版权 -->
+		<p class="copyright">
+			© 2005-2017 U袋网 版权所有，并保留所有权利<br>
+			ICP备案证书号：闽ICP备16015525号-2&nbsp;&nbsp;&nbsp;&nbsp;福建省宁德市福鼎市南下村小区（锦昌阁）1栋1梯602室&nbsp;&nbsp;&nbsp;&nbsp;Tel: 18650406668&nbsp;&nbsp;&nbsp;&nbsp;E-mail: 18650406668@qq.com
+		</p>
+	</div>
+</body>
+</html>
